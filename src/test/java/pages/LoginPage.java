@@ -26,12 +26,4 @@ public class LoginPage {
     @FindBy(css = "div[class='css-1dbjc4n r-1awozwy r-184aecr r-z2wwpe r-1loqt21 r-18u37iz r-tmtnm0 r-1777fci r-1x0uki6 r-1w50u8q r-ah5dr5 r-1otgn73']")
     public WebElement loginbutton;
 
-    @FindBy(xpath= "(//input[@class='css-1cwyjr8 r-homxoj r-ubezar r-10paoce r-13qz1uu'])[1]")
-    public WebElement fromTextBox;
-
-    @FindBy(xpath = "(//input[@class='css-1cwyjr8 r-homxoj r-ubezar r-10paoce r-13qz1uu'])[2]")
-    public WebElement toTextBox;
-
-
-
 }

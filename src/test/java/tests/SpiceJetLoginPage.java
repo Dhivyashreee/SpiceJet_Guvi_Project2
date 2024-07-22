@@ -10,14 +10,11 @@ import java.time.Duration;
 
 import static utils.UrlConstants.HOMEPAGE_URL;
 
-public class SpiceJetBookingPage extends BaseTest{
+public class SpiceJetLoginPage extends BaseTest{
 
     @Test
 
-    public void LoginPageTest() throws InterruptedException {
-
-        driver.get(HOMEPAGE_URL);
-        driver.manage().window().maximize();
+    public void LoginPageTest() {
 
         Actions actions = new Actions(driver);
         actions.moveToElement(loginPage.login).click().build().perform();
@@ -32,17 +29,7 @@ public class SpiceJetBookingPage extends BaseTest{
         Actions loginAction = new Actions(driver);
         loginAction.moveToElement(loginPage.loginbutton).click().build().perform();
 
-        WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofMinutes(1));
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//input[@class='css-1cwyjr8 r-homxoj r-ubezar r-10paoce r-13qz1uu'])[1]")));
-
-        loginPage.fromTextBox.sendKeys("Delhi");
-        loginPage.toTextBox.sendKeys("Madurai");
 
     }
-
-
-
-
-    
 
 }
